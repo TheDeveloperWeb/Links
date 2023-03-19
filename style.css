@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -30,31 +31,64 @@ body {
     width: 200px;
     border-radius: 100px;
     margin-bottom: 20px;
+    animation: fadeIn 3s;
 }
 
 .name {
-    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', monospace;
     color: white;
+    border-right: 4px solid;
+    width: 15ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(18), blinking 0.5s infinite step-end alternate;
 }
 
 .specialty {
-    font-family: 'Raleway';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', monospace;
     color: grey;
+    border-right: 4px solid;
+    width: 20ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(20), blinking 0.5s infinite step-end alternate;
 }
+
+@keyframes typing {
+    from {
+      width: 0;  
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
 
 .list {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 30px;
+    animation: fadeIn 3s;
 }
 
 .button_img {
     width: 20px;
 }
 
-.botton {
+.retorno {
     font-family: 'Raleway', sans-serif;
+    color: white;
+    animation: fadeIn 3s;
 }
 
 button {
@@ -75,4 +109,13 @@ li {
 a {
     text-decoration: none;
     color: black;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
