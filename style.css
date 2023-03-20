@@ -31,7 +31,7 @@ body {
     width: 200px;
     border-radius: 100px;
     margin-bottom: 20px;
-    animation: fadeIn 3s;
+    animation: fadeIn 5s;
 }
 
 .name {
@@ -60,35 +60,22 @@ body {
     animation: typing 1s steps(20), blinking 0.5s infinite step-end alternate;
 }
 
-@keyframes typing {
-    from {
-      width: 0;  
-    }
-}
-
-@keyframes blinking {
-    50% {
-        border-color: transparent;
-    }
-}
-
-
 .list {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 30px;
-    animation: fadeIn 3s;
+    animation: fadeIn 5s;
 }
 
 .button_img {
     width: 20px;
 }
 
-.retorno {
+.return {
     font-family: 'Raleway', sans-serif;
     color: white;
-    animation: fadeIn 3s;
+    animation: fadeIn 5s;
 }
 
 button {
@@ -117,5 +104,43 @@ a {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes typing {
+    from {
+      width: 0;  
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1000px) {
+
+    .list { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .foto {
+        width: 100px;
+    }
+
+    .return {
+        font-size: 15px;  
+    }
+
+    button {
+        width: 250px;
     }
 }
