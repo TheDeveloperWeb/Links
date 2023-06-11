@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 50px;
+    margin-top: 100px;
 }
 
 .header {
@@ -28,7 +29,7 @@ body {
 }
 
 .foto {
-    width: 200px;
+    width: 150px;
     border-radius: 100px;
     margin-bottom: 20px;
     animation: fadeIn 5s;
@@ -87,6 +88,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
 }
 
 li {
@@ -94,8 +96,9 @@ li {
 }
 
 a {
+    padding-left: 10px;
     text-decoration: none;
-    color: blue;
+    color: black;
     
 }
 
@@ -120,8 +123,12 @@ a {
     }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 1000px) {
+@media only screen and (max-width: 600px) and (max-width: 900px) {
 
+    .main {
+        margin-top: 40px;
+    }
+    
     .list { 
         display: flex;
         flex-direction: column;
@@ -133,15 +140,12 @@ a {
         font-size: 20px;
     }
 
-    .foto {
-        width: 100px;
-    }
-
     .return {
         font-size: 15px;  
     }
 
     button {
-        width: 250px;
+        max-width: 250px;
+        border: none;
     }
 }
