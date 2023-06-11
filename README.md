@@ -1,2 +1,7 @@
-# link-bio-instagram
-this is a link to the istagram bio! In it you can add several important and relevant information.
+## 💡 Link for Instagram bio
+### This is a links page to be used in the Instagram "BIO"! 📱💡
+### I used the following tools in this project: 🔧🎓
+✅ HTML5; 
+✅ CSS3; 
+✅ FlexBox(css);
+✅ JavaScript;
